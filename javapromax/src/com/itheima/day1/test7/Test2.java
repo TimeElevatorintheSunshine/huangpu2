@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Test2 {
     public static void main(String[] args) {
-        int[]arr = {44,23,6,12,64,13,73,99};
+        int[]arr = {44,23,6,6,64,13,73,99};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
-        System.out.println(index(arr, 22));
+        System.out.println(index(arr, 6));
     }
     public static int index (int[] arr,int a){
         int left = 0;

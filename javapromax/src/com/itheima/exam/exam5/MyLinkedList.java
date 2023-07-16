@@ -1,4 +1,4 @@
-package com.itheima.exam.exam4;
+package com.itheima.exam.exam5;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -18,32 +18,27 @@ public class MyLinkedList<E> {
         }
     }
 
-    //12345 l2 r4
     public Node<E> reverse(Node<E> head, int left, int right) {
-        if (head == null || left < 1 || left > size || right < 1 || right > size || left > right || left == right) {
+        if (head == null || left < 1 || left > size || right < 1 || right > size || right == left || left > right) {
             return head;
         }
-
-        // 1、找出左节点的起始地址。
-        // 2、从左边遍历到右节点，然后把数据先存入集合。
-
         Node<E> first = head;
-        Node<E> mark = null;
-        List<E> nodes = new ArrayList<>();
         int index = 0;
+        Node<E> mark = null;
+        List<E> list = new ArrayList<>();
         while (head != null) {
             index++;
             if (index == left) mark = head;
-            if (index >= left && index <= right) nodes.add(head.data);
+            if (index >= left && index <= right) list.add(head.data);
             if (index == right) break;
 
             head = head.next;
         }
-        for (int i = nodes.size() - 1; i >= 0; i--) {
-            E e = nodes.get(i);
+
+        for (int i = list.size() - 1; i >= 0; i--) {
+            E e = list.get(i);
             mark.data = e;
             mark = mark.next;
-
         }
 
 
@@ -54,7 +49,7 @@ public class MyLinkedList<E> {
         Node<E> head = null;
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("请您输入下一个结点数据");
+            System.out.println("请输入结点下一个数据");
             String data = sc.next();
             if (data.equals("exit")) break;
             if (head == null) {
@@ -66,8 +61,6 @@ public class MyLinkedList<E> {
                 temp.next = new Node(data, null);
                 size++;
             }
-
-
         }
         return head;
     }
