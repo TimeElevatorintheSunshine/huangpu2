@@ -1,22 +1,23 @@
-package com.itheima.day5.d4_jdk8_time;
+package com.itheima1.practice.day5.jdk8_time;
+import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.util.Calendar;
+import java.time.LocalTime;
+import java.time.Month;
 
 public class Test1_LocalDate {
     public static void main(String[] args) {
         // 0、获取本地日期对象(不可变对象)
-        LocalDate ld = LocalDate.now(); // 年 月 日
+        LocalDate ld = LocalDate.now();// 年 月 日
         System.out.println(ld);
 
+
         // 1、获取日期对象中的信息
-        int year = ld.getYear(); // 年
-        int month = ld.getMonthValue(); // 月(1-12)
-        int day = ld.getDayOfMonth(); // 日
-        int dayOfYear = ld.getDayOfYear();  // 一年中的第几天
-        int dayOfWeek = ld.getDayOfWeek().getValue(); // 星期几
-        System.out.println(year);
-        System.out.println(day);
-        System.out.println(dayOfWeek);
+        int year = ld.getYear();// 年
+        int month = ld.getMonthValue();// 月(1-12)
+        int day = ld.getDayOfMonth();// 日
+        int dayOfYear = ld.getDayOfYear();// 一年中的第几天
+        int dayOfWeek = ld.getDayOfWeek().getValue();// 星期几
+
 
         // 2、直接修改某个信息: withYear、withMonth、withDayOfMonth、withDayOfYear
         LocalDate ld2 = ld.withYear(2099);

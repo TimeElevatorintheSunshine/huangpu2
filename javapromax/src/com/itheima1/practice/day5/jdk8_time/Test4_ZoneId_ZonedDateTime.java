@@ -1,10 +1,6 @@
-package com.itheima.day5.d4_jdk8_time;
+package com.itheima1.practice.day5.jdk8_time;
 
-import java.time.Clock;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.util.Calendar;
-import java.util.TimeZone;
+import java.time.*;
 
 public class Test4_ZoneId_ZonedDateTime {
     public static void main(String[] args) {
@@ -35,5 +31,10 @@ public class Test4_ZoneId_ZonedDateTime {
         System.out.println(now2);
 
         // Calendar instance = Calendar.getInstance(TimeZone.getTimeZone(zoneId1));
+
+        long l = System.currentTimeMillis();
+        Instant instant = Instant.ofEpochMilli(l);
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
+        System.out.println(localDateTime);
     }
 }

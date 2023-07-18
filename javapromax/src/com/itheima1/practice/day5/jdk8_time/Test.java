@@ -1,4 +1,4 @@
-package com.itheima.day5.d4_jdk8_time;
+package com.itheima1.practice.day5.jdk8_time;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -12,7 +12,7 @@ public class Test {
         // 1、设计不合理，使用不方便，很多都被淘汰了。
         Date d = new Date();
         //System.out.println(d.getYear() + 1900);
-
+       // System.out.println(d.getYear()); //123
         Calendar c = Calendar.getInstance();
         int year = c.get(Calendar.YEAR);
         System.out.println(year);

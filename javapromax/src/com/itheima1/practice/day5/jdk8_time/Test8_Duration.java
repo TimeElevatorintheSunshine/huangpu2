@@ -1,13 +1,12 @@
-package com.itheima.day5.d4_jdk8_time;
+package com.itheima1.practice.day5.jdk8_time;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.time.temporal.ChronoUnit;
 
 public class Test8_Duration {
     public static void main(String[] args) {
-        LocalDateTime start = LocalDateTime.of(2025, 11, 11, 11, 10, 10);
+        LocalDateTime start = LocalDateTime.of(2015, 11, 11, 11, 10, 10);
         LocalDateTime end = LocalDateTime.of(2025, 11, 11, 11, 11, 11);
         // 1、得到Duration对象
         Duration duration = Duration.between(start, end);
@@ -19,6 +18,8 @@ public class Test8_Duration {
      //   System.out.println(duration.toSeconds());// 间隔多少秒
         System.out.println(duration.toMillis());// 间隔多少毫秒
         System.out.println(duration.toNanos());// 间隔多少纳秒
+
+        System.out.println(ChronoUnit.YEARS.between(start, end));
 
     }
 }
