@@ -1,12 +1,12 @@
-package com.itheima.exam.exam4;
+package com.itheima.exam.exam10;
 
 import java.util.LinkedList;
 
-public class Test {
-    public static void main(String[] args) {
+public class Test1 {
+    public static void main(String[] args)  {
         MyLinkedList<String> s = new MyLinkedList<>();
         MyLinkedList.Node<String> add = s.add();
+        s.reverse(add,1,5);
         s.forEach(add);
-        s.forEach(s.reverse(add,1,4));
     }
 }

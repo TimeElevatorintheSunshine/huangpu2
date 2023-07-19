@@ -15,6 +15,7 @@ public class Question3 {
     public static void main(String[] args)throws Exception  {
 
         Timer timer = new Timer();
+                        //对象名        间隔时间    延迟
         timer.schedule(new TimeTask(),0,1000);
 
     }

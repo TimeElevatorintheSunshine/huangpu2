@@ -1,10 +1,16 @@
 package com.itheima.exam.exam10;
 
+import java.util.Arrays;
+
 public class Check {
     public static void main(String[] args) {
-         int[]  nums = {5,7,7,8,8,8,8,10};
-         int target = 11;
+        long l = System.currentTimeMillis();
+        int[] nums = { 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10, 5, 7, 7, 8, 8, 8, 8, 10};
+         int target = 8;
+        Arrays.sort(nums);
         System.out.println("[" + check(nums, target) + ","+ check1(nums, target) +"]");
+        long l1 = System.currentTimeMillis();
+        System.out.println(l1-l);
 
     }
     public static int check(int[] arr , int a){
