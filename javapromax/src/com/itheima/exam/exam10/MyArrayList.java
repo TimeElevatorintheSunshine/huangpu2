@@ -18,6 +18,7 @@ public class MyArrayList<E> {
         }
 
     }
+
     public E remove(int index){
         check(index);
         E e = (E)element[index];

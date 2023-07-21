@@ -15,11 +15,13 @@ public class Question4 {
 
         // 补全代码
         Random r = new Random();
-
+        long l = System.currentTimeMillis();
         for (int i = 0; i < 100; i++) {
             int num = r.nextInt(awards[3].getHigt());
             System.out.println(binarySearch(awards, num));
         }
+        long l1 = System.currentTimeMillis();
+        System.out.println(l1-l);
 
     }
 

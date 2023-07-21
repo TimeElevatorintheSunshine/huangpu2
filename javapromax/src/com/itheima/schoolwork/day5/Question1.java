@@ -33,12 +33,9 @@ public class Question1 {
     public static void sort(Student[] students) {
         // 补全代码
 
-        Arrays.sort(students, new Comparator<Student>() {
-            @Override
-            public int compare(Student o1, Student o2) {
-                return o1.getHeight()-o2.getHeight();
-            }
-        });
+        Arrays.sort(students, ( o1,  o2) ->  o1.getHeight()-o2.getHeight());
+
+
 
     }
 
