@@ -24,7 +24,7 @@ public class Topic2 {
             users.add(user);
         }
         System.out.println(users);
-        HashMap<String,Integer> map = new HashMap<>();
+        Map<String,Integer> map = new HashMap<>();
         for (int i = 0; i < users.size(); i++) {
             User user = users.get(i);
             if (map.keySet().contains(user.getName())){

@@ -1,9 +1,6 @@
 package com.itheima.schoolwork.day6;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * "斗地主"游戏是大家都比较喜欢的游戏。游戏规则：本游戏为三人游戏，一副牌54张，每人17张，留3张做底牌，
@@ -12,7 +9,7 @@ import java.util.Random;
 public class Question2 {
     public static void main(String[] args) {
         // 牌盒
-        ArrayList<String> card = new ArrayList<>();
+        List<String> card = new ArrayList<>();
         String[] s = {"♥", "♦", "♣", "♠"};
         String[] s1 = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         for (int i = 0; i < s.length; i++) {
@@ -22,23 +19,15 @@ public class Question2 {
         }
         card.add("🤡");
         card.add("🃏");
-        System.out.println(card);
-        // 打乱
-        Random r = new Random();
-        int index;
-        String temp;
-        for (int i = 0; i < card.size(); i++) {
-            index = r.nextInt(card.size());
-            temp = card.get(i);
-            card.set(i, card.get(index));
-            card.set(index, temp);
-        }
         //   System.out.println(card);
+        // 打乱
+        Collections.shuffle(card);
+        System.out.println(card);
         // 1、创建四个List集合对象，分别用来存储3个玩家的牌以及底牌
-        ArrayList<String> player1 = new ArrayList<>();
-        ArrayList<String> player2 = new ArrayList<>();
-        ArrayList<String> player3 = new ArrayList<>();
-        ArrayList<String> landlord = new ArrayList<>();
+        List<String> player1 = new ArrayList<>();
+        List<String> player2 = new ArrayList<>();
+        List<String> player3 = new ArrayList<>();
+        List<String> landlord = new ArrayList<>();
         // 2、遍历牌盒将合适的牌存储到上述指定的集合中
         int n = card.size() / 3;
         for (int i = 0; i < n - 1; i++) {

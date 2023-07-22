@@ -21,14 +21,15 @@ public class Test {
         Date date = new Date();
         long l = time - date.getTime();
         while (true){
-            Thread.sleep(1000);
-            l -=1000;
+
            // 4385781144
             //4385642
             //73094
             //1218
             System.out.println(l/1000/60/60/24 + "天" + (l/1000/60/60 -l/1000/60/60/24*24) +"小时"
                     +(l/1000/60-(l/1000/60/60)*60) +"分钟"+(l/1000-(l/1000/60)*60)+"秒");
+            Thread.sleep(1000);
+            l -= 1000;
         }
     }
 }
