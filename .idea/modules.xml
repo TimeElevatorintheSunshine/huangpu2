@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javapromax/javapromax.iml" filepath="$PROJECT_DIR$/javapromax/javapromax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mytest-chenyuansheng/mytest-chenyuansheng.iml" filepath="$PROJECT_DIR$/mytest-chenyuansheng/mytest-chenyuansheng.iml" />
     </modules>
   </component>
 </project>

@@ -3,9 +3,10 @@ package com.itheima.exam.exam10;
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Objects;
 
-public class MyArrayList<E> {
+public class MyArrayList<E>  {
     private static Object[] element = {};
     private int size;
     public int size(){

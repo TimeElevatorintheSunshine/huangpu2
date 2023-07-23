@@ -1,4 +1,4 @@
-package com.itheima.day1.test11;
+package com.itheima.day1.test11.io1;
 
 import java.io.File;
 import java.io.FileInputStream;
