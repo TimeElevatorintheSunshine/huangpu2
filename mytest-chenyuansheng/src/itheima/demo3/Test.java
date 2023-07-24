@@ -11,7 +11,7 @@ public class Test {
 
         drinks.add(new Drink("水", 24, 4));
         drinks.add(new Drink("牛奶", 160, 8));
-        drinks.add(new Drink("五粮液", 4000, 40));
+        drinks.add(new Drink("五粮液", 4000, 2));
         drinks.add(new Drink("可乐", 108, 6));
         drinks.add(new Drink("茅台", 4000, 1));
         System.out.println("总价值" + f(10));
