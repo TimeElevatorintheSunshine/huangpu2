@@ -1,6 +1,5 @@
 package com.itheima.schoolwork.day6;
 
-import sun.net.TelnetOutputStream;
 
 import java.util.ArrayList;
 import java.util.Random;

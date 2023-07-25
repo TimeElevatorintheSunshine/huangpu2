@@ -1,6 +1,6 @@
 package com.itheima.day3.polymorphism2;
 
-import com.sun.org.apache.xml.internal.dtm.ref.DTMNamedNodeMap;
+
 
 public class Test1 {
     public static void main(String[] args) {

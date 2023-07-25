@@ -24,25 +24,22 @@ public class MyLinkedList<E> {
             list.add(temp.val);
             temp =temp.next;
         }
-
-
        list.sort(Comparator.comparingInt(Object::hashCode));
         head =null;
         for (E e : list) {
             add(e);
         }
-
-
     }
     public void deleteDuplicate() {
         Node<E> temp = head;
         HashMap<E, Integer> map = new HashMap<>();
         while (temp!=null){
-            if (map.keySet().contains(temp.val)){
-                map.put(temp.val,map.get(temp.val) + 1);
-            }else {
-            map.put(temp.val,1);
-            }
+//            if (map.keySet().contains(temp.val)){
+//                map.put(temp.val,map.get(temp.val) + 1);
+//            }else {
+//            map.put(temp.val,1);
+//            }
+            map.put(temp.val,map.contains(temp.val))?map.get(temp.val) + 1:1)
             temp =temp.next;
         }
         head =null;

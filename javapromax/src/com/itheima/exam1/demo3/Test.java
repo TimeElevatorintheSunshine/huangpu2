@@ -1,12 +1,11 @@
 package com.itheima.exam1.demo3;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Map;
+
 
 public class Test {
     private static ArrayList<Liquid> liquid = new ArrayList<>();

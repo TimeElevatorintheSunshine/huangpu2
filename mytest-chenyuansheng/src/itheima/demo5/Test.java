@@ -9,15 +9,16 @@ public class Test {
         s.add("2");
         s.add("3");
         s.add("4");
-        s.forEach(System.out::println);
+        s.forEach(System.out::print);
+        System.out.println();
         s.add(3,"6");
-        s.forEach(System.out::println);
-
+        s.forEach(System.out::print);
+        System.out.println();
         ArrayList<String> s2 = new ArrayList<>();
         s2.add("4");
         s2.add("5");
         s.addAll(s2);
-        s.forEach(System.out::println);
+        s.forEach(System.out::print);
 
     }
 }

@@ -1,6 +1,6 @@
 package com.itheima.day2.static4;
 
-import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIB;
+
 
 public class Test {
     public static void main(String[] args) {

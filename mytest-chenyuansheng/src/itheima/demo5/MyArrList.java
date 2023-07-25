@@ -43,7 +43,7 @@ public class MyArrList<E> {
         if (size == 0 ){
             element = new Object[10];
         }else {
-            element = Arrays.copyOf(element,element.length + element.length>>1);
+            element = Arrays.copyOf(element,element.length + (element.length>>1));
         }
     }
     public void forEach(MyConsumer consumer){
