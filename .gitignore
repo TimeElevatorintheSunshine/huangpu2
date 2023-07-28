@@ -8,6 +8,8 @@
 *.iml
 *.ipr
 *.xml
+*.jar
+*.properties
 modules.xml
 
 target/

@@ -17,7 +17,7 @@ public class PrintStreamDemo1 {
             ps.println("我爱你中国abc");
             ps.println(true);
             ps.println('a');
-            ps.println(0.1);
+            ps.print(0.1);
             ps.write("我爱你中国abc");
             ps.write(97);
 

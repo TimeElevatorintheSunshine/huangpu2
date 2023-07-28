@@ -6,7 +6,7 @@ public class Test5 {
     public static void main(String[] args) {
         File file2 = new File("D:/aaa");
        System.out.println(file2.mkdirs());
-        f(file2);
+       f(file2);
     }
     public static void f(File file){
             if (file.isFile()){
